@@ -1,0 +1,152 @@
+body {
+  background: linear-gradient(135deg, #f9e5ff, #ffe3e3, #fff4d9);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  transition: background 0.5s ease;
+}
+
+.profile-container {
+  max-width: 950px;
+  margin: 0 auto;
+  background: #ff4141cc;
+  border-radius: 25px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+}
+
+.profile-container:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.intro-text {
+  background-color: #c1deee;
+  border-radius: 15px;
+  padding: 20px 25px;
+  flex: 1;
+  margin-right: 20px;
+  min-width: 250px;
+  transition: 0.3s ease;
+}
+
+.intro-text:hover {
+  background-color: #cafae4;
+  transform: translateY(-3px);
+}
+
+.intro-text .hello {
+  font-weight: bold;
+  font-size: 14px;
+  color: #444;
+  letter-spacing: 1px;
+}
+
+.intro-text h1 {
+  color: #dd56c0;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+.section {
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 25px;
+  transition: 0.3s ease;
+}
+
+.section h2 {
+  text-align: center;
+  background: #f8f8f8;
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about {
+  background-color: #7bcdf3;
+}
+
+.education {
+  background-color: #f1dc8f;
+}
+
+.hobbies {
+  background-color: #e0eea0;
+}
+
+.loves {
+  background-color: #c3a5e9;
+}
+
+.goals {
+  background-color: #ff9696;
+}
+
+.two-columns {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 25px;
+  line-height: 1.8;
+}
+
+
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-text {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  .two-columns {
+    flex-direction: column;
+  }
+}
